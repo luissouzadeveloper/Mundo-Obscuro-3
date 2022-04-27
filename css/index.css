@@ -1,0 +1,242 @@
+/*Reset*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Fontes*/
+@font-face {
+    font-family: Destaque;
+    src: url(../fonts/coolvetica\ condensed\ rg.otf);
+}
+
+/*Variáveis de css*/
+:root{
+    --fonte: 'Destaque';
+    --cor1: #ffcc00;
+    --cor2: #222222;
+    --cor3: #ffffff; 
+}
+
+/*Corpo*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+/*Cabeçalho*/
+header{
+    background-color: var(--cor1);
+    padding: 10px;
+}
+
+/*Logo do site*/
+#logo{
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*Menu*/
+nav{
+    background-color: var(--cor2);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 2px 5px var(--cor2)
+}
+
+/*Links do menu*/
+nav > a{
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+/*Animação do link*/
+nav > a:hover{
+    text-decoration: underline;
+}
+
+/*Título*/
+.titulo{
+    font-family: var(--fonte);
+    font-size: 2.3em;
+    text-align: center;
+    margin: 10px;
+}
+
+/*Imagem de fundo*/
+#fundo{
+    margin-top: 30px;
+    background-image: url(../img/fundo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*height: 40vh;*/
+}
+
+#fundo > p{
+    color: var(--cor3);
+    text-align: justify;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+/*Data*/
+#descrition{
+   display: inline;
+}
+
+/*Controles de aparência*/
+#botoes{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Modo Claro e escuro*/
+.darkmode{
+    background-color: #303030;
+    color: white;
+}
+
+.lightmode{
+    background-color: var(--cor3);
+    color: black;
+}
+
+#botoes > button{
+    padding: 5px;
+    background-color: var(--cor1);
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid var(--cor2);
+}
+
+#botoes > button{
+    margin-left: 10px;
+}
+
+/*Corpo da página*/
+main{
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/*Seção da página*/
+section{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/*Subtítulo*/
+.subtitulo{
+    font-family: var(--fonte);
+    font-size: 1.8em;
+    margin: 10px 0;
+    border-bottom: 2px double var(--cor2);
+}
+
+/*Quadro da imagem*/
+figure{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px var(--cor2);
+}
+
+/*Imagem*/
+figure > img{
+    width: 100%;
+    margin: auto;
+}
+
+/*Descrição da imagem*/
+figure > figcaption{
+    text-align: center;
+    margin: 5px;
+    font-weight: bold;
+}
+
+figcaption > a{
+    text-decoration: none;
+    color: black;
+}
+
+figcaption > a:hover{
+    text-decoration: underline;
+}
+
+/*Parágrafos*/
+section > p{
+    text-align: justify;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+/*Contéudo extra*/
+.box{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Itens do conteúdo extra*/
+.box > a{
+    background-color: var(--cor1);
+    color: black;
+    text-align: center;
+    margin: 15px;
+    padding: 7px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/*Animações*/
+.box > a:hover{
+    text-decoration: underline;
+}
+
+/*Rodapé*/
+footer{
+    background-color: var(--cor1);
+    padding: 5px;
+    box-shadow: 0px 10px 5px var(--cor2);
+}
+
+footer > div{
+    display: block;
+    margin: auto;
+}
+
+#marca, #redes > p{
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/*Mobile*/
+@media (max-width: 600px) {
+    #descrition > small{
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    #botoes > button{
+        display: block;
+        margin: auto;
+    }
+    
+    section > h1, h2{
+        text-align: center;
+    }
+}
+
+
+
+
+
+

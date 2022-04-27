@@ -1,0 +1,178 @@
+/*Reset*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Fontes*/
+@font-face {
+    font-family: Destaque;
+    src: url(../fonts/coolvetica\ condensed\ rg.otf);
+}
+
+/*Variáveis de css*/
+:root{
+    --fonte: 'Destaque';
+    --cor1: #ffcc00;
+    --cor2: #222222;
+    --cor3: #ffffff; 
+}
+
+/*Corpo*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+/*Cabeçalho*/
+header{
+    background-color: var(--cor1);
+    padding: 10px;
+}
+
+/*Logo do site*/
+#logo{
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*Menu*/
+nav{
+    background-color: var(--cor2);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Links do menu*/
+nav > a{
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+/*Animação do link*/
+nav > a:hover{
+    text-decoration: underline;
+}
+
+/*Corpo da página*/
+main{
+    max-width: 1000px;
+    margin: auto;
+}
+
+/*Controles de aparência*/
+#botoes{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*Modo Claro e escuro*/
+.darkmode{
+    background-color: #303030;
+    color: white;
+}
+
+.lightmode{
+    background-color: var(--cor3);
+    color: black;
+}
+
+#botoes > button{
+    padding: 5px;
+    background-color: var(--cor1);
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid var(--cor2);
+}
+
+#botoes > button{
+    margin-left: 10px;
+}
+
+/*Seção da página*/
+section{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/*Título principal*/
+.titulo{
+    font-family: var(--fonte);
+    text-align: center;
+    font-size: 2.3em;
+    margin: 10px;
+}
+
+.subtitulo{
+    font-family: var(--fonte);
+    font-size: 1.8em;
+    border-bottom: 2px solid var(--cor2);
+}
+
+/*Parágrafo*/
+section > p{
+    text-align: justify;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+/*Vídeo*/
+.video{
+    max-width: 1000px;
+    height: 600px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+iframe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Rodapé*/
+footer{
+    background-color: var(--cor1);
+    padding: 5px;
+    box-shadow: 0px 10px 5px var(--cor2);
+}
+
+footer > div{
+    display: block;
+    margin: auto;
+}
+
+#marca, #redes > p{
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/*Mobile*/
+@media (max-width: 600px){
+    /*Vídeo*/
+    .video{
+        max-width: 1000px;
+        margin: 5px;
+        padding: 10px;
+        height: 380px;
+    }
+    
+    iframe{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .subtitulo{
+        font-family: var(--fonte);
+        font-size: 1.8em;
+        border-bottom: 2px solid var(--cor2);
+        text-align: center;
+    }
+}
